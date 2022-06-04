@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>this is my form<h2>
+        <form action="/tacos">
+            <p>
+                <label for="username">Enter your username:</label>
+            <input type="text" placeholder="username"  id="username" name="username">
+            </p>
+            <p>
+                <label for="dob">enter your date of birth:</label>
+            <input type="date" placeholder="dob" id="dob" name="dob">
+    
+            </p>
+            <p>
+                <label for="password">enter password:</label>
+            <input type="password" placeholder="password" id="password" name="password">
+    
+            </p>
+            <p>
+                <label for="num">pick a number:</label>
+                <input type="number" placeholder="num" id="num" name="num" min="1" max="500">
+            </p>
+            <p>
+                <label for="color">choose a color</label>
+                <input type="color"  id="color" name="color">
+            </p>
+            <p>
+                <input type="submit" value="submit">
+            </p>
+    
+        </form>
+        
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" >
+            <button>google search</button>
+        </form>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <button>youtube search</button>
+        </form>
+        <h3>shirt size</h3>
+        <form action="/birds">
+            <label for="s">s</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+
+        </form>
+        <form action="/trango">
+            <label for="cb">I agree</label>
+            <input type="checkbox" name="cb" id="cb">
+        </form>
+        <form action="/sggh">
+            <label for="meal">meal</label>
+            <select name="meal" id="meal">
+                <option value="veg">vegetarian</option>
+                <option value="nonveg">nonvegetarian</option>
+                <option value="anything">i can eat anything</option>
+            </select>
+        </form>
+        <form action="/gdgd">
+            <label for="cheese">amount of cheese</label>
+            <input type="range" name="cheese_level" min="1" max="100" step="5" id="cheese">
+            <button>submit</button>
+        </form>
+        <form action="/hdsj">
+            <label for="text">add your suggestions</label>
+            <textarea name="text" id="text" cols="30" rows="10">any suggestions</textarea>
+        </form>
+        <form action="/dummy">
+            <label for="text">input your views</label>
+            <input type="text" name="text" id="text" required minlength="5" maxlength="56">
+            <button>submit</button>
+        </form>
+        
+</body>
+</html>
